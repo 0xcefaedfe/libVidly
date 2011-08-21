@@ -1,0 +1,252 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02125454140143F600D60A4F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02125453140143F600D60A4F /* Foundation.framework */; };
+		021254671401445B00D60A4F /* Vidly.h in Headers */ = {isa = PBXBuildFile; fileRef = 021254611401445B00D60A4F /* Vidly.h */; };
+		021254681401445B00D60A4F /* XMLDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 021254631401445B00D60A4F /* XMLDictionary.h */; };
+		021254691401445B00D60A4F /* XMLDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 021254641401445B00D60A4F /* XMLDictionary.m */; };
+		0212546A1401445B00D60A4F /* Vidly.m in Sources */ = {isa = PBXBuildFile; fileRef = 021254661401445B00D60A4F /* Vidly.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		02125450140143F600D60A4F /* libVidly.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libVidly.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		02125453140143F600D60A4F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		021254611401445B00D60A4F /* Vidly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vidly.h; sourceTree = "<group>"; };
+		021254631401445B00D60A4F /* XMLDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLDictionary.h; sourceTree = "<group>"; };
+		021254641401445B00D60A4F /* XMLDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLDictionary.m; sourceTree = "<group>"; };
+		021254661401445B00D60A4F /* Vidly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vidly.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0212544D140143F600D60A4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02125454140143F600D60A4F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02125445140143F600D60A4F = {
+			isa = PBXGroup;
+			children = (
+				02125455140143F600D60A4F /* Vidly */,
+				02125452140143F600D60A4F /* Frameworks */,
+				02125451140143F600D60A4F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		02125451140143F600D60A4F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				02125450140143F600D60A4F /* libVidly.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		02125452140143F600D60A4F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02125453140143F600D60A4F /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		02125455140143F600D60A4F /* Vidly */ = {
+			isa = PBXGroup;
+			children = (
+				021254601401445B00D60A4F /* Headers */,
+				021254651401445B00D60A4F /* Implementation */,
+				021254621401445B00D60A4F /* HelperClasses */,
+			);
+			path = Vidly;
+			sourceTree = "<group>";
+		};
+		021254601401445B00D60A4F /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				021254611401445B00D60A4F /* Vidly.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		021254621401445B00D60A4F /* HelperClasses */ = {
+			isa = PBXGroup;
+			children = (
+				021254631401445B00D60A4F /* XMLDictionary.h */,
+				021254641401445B00D60A4F /* XMLDictionary.m */,
+			);
+			path = HelperClasses;
+			sourceTree = "<group>";
+		};
+		021254651401445B00D60A4F /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				021254661401445B00D60A4F /* Vidly.m */,
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0212544E140143F600D60A4F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				021254671401445B00D60A4F /* Vidly.h in Headers */,
+				021254681401445B00D60A4F /* XMLDictionary.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0212544F140143F600D60A4F /* Vidly */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0212545D140143F600D60A4F /* Build configuration list for PBXNativeTarget "Vidly" */;
+			buildPhases = (
+				0212544C140143F600D60A4F /* Sources */,
+				0212544D140143F600D60A4F /* Frameworks */,
+				0212544E140143F600D60A4F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Vidly;
+			productName = Vidly;
+			productReference = 02125450140143F600D60A4F /* libVidly.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		02125447140143F600D60A4F /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 0212544A140143F600D60A4F /* Build configuration list for PBXProject "Vidly" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 02125445140143F600D60A4F;
+			productRefGroup = 02125451140143F600D60A4F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0212544F140143F600D60A4F /* Vidly */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0212544C140143F600D60A4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				021254691401445B00D60A4F /* XMLDictionary.m in Sources */,
+				0212546A1401445B00D60A4F /* Vidly.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0212545B140143F600D60A4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0212545C140143F600D60A4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0212545E140143F600D60A4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Vidly.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Vidly/Vidly-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		0212545F140143F600D60A4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Vidly.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Vidly/Vidly-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0212544A140143F600D60A4F /* Build configuration list for PBXProject "Vidly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0212545B140143F600D60A4F /* Debug */,
+				0212545C140143F600D60A4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0212545D140143F600D60A4F /* Build configuration list for PBXNativeTarget "Vidly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0212545E140143F600D60A4F /* Debug */,
+				0212545F140143F600D60A4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 02125447140143F600D60A4F /* Project object */;
+}
