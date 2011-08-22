@@ -67,5 +67,6 @@ typedef enum {
 // or you can pass the raw XML to this method
 // see htpp://api.vid.ly for more options
 - (void)sendQueryWithXMLBody:(NSString*)xmlString;
+- (void)cancel;
 
 @end

@@ -53,7 +53,7 @@ static NSString *errorDomain = @"ly.vid.api";
 }
 
 - (void)sendQueryWithXMLBody:(NSString*)xmlString {
-    if (_status != VidlyConnectionStatusReady) {
+    if (_status == VidlyConnectionStatusRunning) {
         if ([_delegate respondsToSelector:@selector(vidly:didFailedWithError:)]) {
             NSDictionary *errorDictionary = [NSDictionary dictionaryWithObject:@"A connection is already running" forKey:@"description"];
             NSError *error = [NSError errorWithDomain:errorDomain code:VidlyErrorConnectionFailed userInfo:errorDictionary];
@@ -126,7 +126,11 @@ static NSString *errorDomain = @"ly.vid.api";
     }
     [self sendQueryWithXMLBody:xmlString];
     [xmlString release];    
-    
+}
+
+- (void)cancel {
+    [_data release], _data = nil;
+    [_urlConnection release], _urlConnection = nil;
 }
 
 #pragma mark -
@@ -143,6 +147,7 @@ static NSString *errorDomain = @"ly.vid.api";
         NSError *vidlyError = [NSError errorWithDomain:errorDomain code:VidlyErrorConnectionFailed userInfo:error.userInfo];
 		[_delegate vidly:self didFailedWithError:vidlyError];
 	}
+    [self cancel];
 }
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection {
@@ -159,6 +164,7 @@ static NSString *errorDomain = @"ly.vid.api";
     _status = VidlyConnectionStatusReady;
     [_data release], _data = nil;    
     [responseString release];
+    [self cancel];
 }
 
 
@@ -166,6 +172,7 @@ static NSString *errorDomain = @"ly.vid.api";
 #pragma mark memory management
 
 - (void)dealloc {
+    [self cancel];    
     self.userID = nil;
     self.userKey = nil;
     self.delegate = nil;
